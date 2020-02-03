@@ -109,4 +109,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="https://raw.githubusercontent.com/Ahhorse1/ahhorse1.github.io/master/countdown.js"></script>
+  <script>
+  $(function () {
+$('#clock-c').countdown(new Date(2020, 3, 1), function(event) {
+      var $this = $(this).html(event.strftime(''
+        + '<span class="h1 font-weight-bold">%D</span> Day%!d'
+        + '<span class="h1 font-weight-bold">%H</span> Hr'
+        + '<span class="h1 font-weight-bold">%M</span> Min'
+        + '<span class="h1 font-weight-bold">%S</span> Sec'));
+    });
+    });
+  </script>
