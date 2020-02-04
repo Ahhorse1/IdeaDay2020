@@ -4,9 +4,8 @@
 /* -------begin customization-------- */
 /* change the primary theme color, and add a new theme color */
 $theme-colors: (
-  primary: #ffb8b7;
-  secondary: #b5dee1;
-  purple: $purple;
+  primaryCustom: #ffb8b7;
+  secondaryCustom: #b5dee1;
 );
 /* -------end customization-------- */
 /* finally, import Bootstrap to set the changes! */
