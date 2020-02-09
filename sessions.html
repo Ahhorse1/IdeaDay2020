@@ -64,9 +64,9 @@
       <li class="nav-item"><a class="font-weight-bold nav-link" data-toggle="tab" href="#allday">All Day</a></li>
     </ul>
       <div class="tab-content">
-        <div id="morning" class="text-center tab-pane fade show active">  
-        <h3><br>Morning Sessions</h3>
-<!--
+            <div id="morning" class="text-center tab-pane fade show active">  
+                <h3><br>Morning Sessions</h3>
+                <!--
         <div class="card-deck">
                     <div class="card bg-info" style="width: 18rem;">
                         <div class="card-body">
@@ -138,88 +138,89 @@
             </div>
         </div>
 -->
-<div class="accordion" id="aOne">
-    <div class="card bg-info">
-        <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-                <button class="btn btn-link font-weight-heavy" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  <b>Computer Models of Disease Spreading</b>
-                </button>
-            </h5>
-        </div>
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#aOne">
-            <div class="card-body">
-                <h6 class="card-subtitle text-center"><b>Dr. Greg Rempala</b></h6>
-                <p class="card-text text-black text-center"><br>If you’re interested in the intersection between medicine and technology, join OSU professor of Biostatistics Greg Rempala to experience a unique opportunity to learn about and use the revolutionary computer models that have played a crucial role in the modern battlefield of preventing and understanding the spread of diseases.
-                </p>
+                <div class="accordion" id="aOne">
+                    <div class="card bg-info">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link font-weight-heavy" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <b>Computer Models of Disease Spreading</b>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#aOne">
+                            <div class="card-body">
+                                <h6 class="card-subtitle text-center"><b>Dr. Greg Rempala</b></h6>
+                                <p class="card-text text-black text-center"><br>If you’re interested in the intersection between medicine and technology, join OSU professor of Biostatistics Greg Rempala to experience a unique opportunity to learn about and use the revolutionary computer models that have played a crucial role in the modern battlefield of preventing and understanding the spread of diseases.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-light">
+                                <small class="text-muted">Choose to attend this Spark Session at <br> 
+                                <b>8:30-9:30 AM</b> or <b>10:00-11:00 AM</b> <br> 
+                                <b>25</b> Participants</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>            
+                <div class="accordion" id="aTwo">
+                    <div class="card bg-success">
+                        <div class="card-header" id="headingOne2">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link font-weight-heavy" type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                  <b>Exploring Dance Artforms</b>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2" data-parent="#aTwo">
+                            <div class="card-body">
+                                <h6 class="card-subtitle text-center"><b>Teresa Crye</b></h6>
+                                <p class="card-text text-black text-center"><br>Learn the building blocks of form and technique from a master dance teacher to enable you to move and create with passion. This workshop will teach you numerous techniques and basic movements of dance, as well as offer fitness and nutrition insight to help maintain health and strength.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-light">
+                                <small class="text-muted">Choose to attend this Workshop at <br> 
+                                <b>8:30-11:00 AM</b> <br> 
+                                <b>40</b> Participants</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="accordion" id="templateAccordion"> <!-- RENAME THE id -->
+                    <div class="card bg-success"> <!-- bg-success = PINK bg-info = YELLOW -->
+                        <div class="card-header" id="placementHeader"> <!-- RENAME THE ID -->
+                            <h5 class="mb-0">
+                                <button class="btn btn-link font-weight-heavy" type="button" data-toggle="collapse" data-target="#templateCollapse" aria-expanded="true" aria-controls="templateCollapse"> <!-- RENAME THE data-target & aria-controls -->
+                                  <b>TEMPLATE</b>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="templateCollapse" class="collapse show" aria-labelledby="templateHeading" data-parent="#templateAccordion"><!-- RENAME THE ID, aria-labelledby, data-parent -->
+                            <div class="card-body"> 
+                                <h6 class="card-subtitle text-center"><b>TEMPLATE</b></h6>
+                                <p class="card-text text-black text-center"><br>TEMPLATE
+                                </p>
+                            </div>
+                            <div class="card-footer bg-light">
+                                <small class="text-muted">Choose to attend this TEMPLATE from <br> 
+                                <b>TEMPLATE AM</b> or <b>TEMPLATE AM</b> <br> 
+                                <b>TEMPLATE</b> Participants</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>    
+            <div id="afternoon" class="text-center tab-pane fade">
+                <h3>Afternoon Sessions</h3>
+                <p>Some content in menu 1.</p>
             </div>
-            <div class="card-footer bg-light">
-                <small class="text-muted">Choose to attend this Spark Session at <br> 
-                <b>8:30-9:30 AM</b> or <b>10:00-11:00 AM</b> <br> 
-                <b>25</b> Participants</small>
+            <div id="allday" class="text-center tab-pane fade">
+                <h3>All Day Sessions</h3>
+                <p>Some content in menu 2.</p>
             </div>
         </div>
     </div>
 </div>
-<br>            
-<div class="accordion" id="aTwo">
-    <div class="card bg-success">
-        <div class="card-header" id="headingOne2">
-            <h5 class="mb-0">
-                <button class="btn btn-link font-weight-heavy" type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-                  <b>Exploring Dance Artforms</b>
-                </button>
-            </h5>
-        </div>
-        <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2" data-parent="#aTwo">
-            <div class="card-body">
-                <h6 class="card-subtitle text-center"><b>Teresa Crye</b></h6>
-                <p class="card-text text-black text-center"><br>Learn the building blocks of form and technique from a master dance teacher to enable you to move and create with passion. This workshop will teach you numerous techniques and basic movements of dance, as well as offer fitness and nutrition insight to help maintain health and strength.
-                </p>
-            </div>
-            <div class="card-footer bg-light">
-                <small class="text-muted">Choose to attend this Workshop at <br> 
-                <b>8:30-11:00 AM</b> <br> 
-                <b>40</b> Participants</small>
-            </div>
-        </div>
-    </div>
-</div>
-<br>
-<div class="accordion" id="templateAccordion"> <!-- RENAME THE id -->
-    <div class="card bg-success"> <!-- bg-success = PINK bg-info = YELLOW -->
-        <div class="card-header" id="placementHeader"> <!-- RENAME THE ID -->
-            <h5 class="mb-0">
-                <button class="btn btn-link font-weight-heavy" type="button" data-toggle="collapse" data-target="#templateCollapse" aria-expanded="true" aria-controls="templateCollapse"> <!-- RENAME THE data-target & aria-controls -->
-                  <b>TEMPLATE</b>
-                </button>
-            </h5>
-        </div>
-        <div id="templateCollapse" class="collapse show" aria-labelledby="templateHeading" data-parent="#templateAccordion"><!-- RENAME THE ID, aria-labelledby, data-parent -->
-            <div class="card-body"> 
-                <h6 class="card-subtitle text-center"><b>TEMPLATE</b></h6>
-                <p class="card-text text-black text-center"><br>TEMPLATE
-                </p>
-            </div>
-            <div class="card-footer bg-light">
-                <small class="text-muted">Choose to attend this TEMPLATE from <br> 
-                <b>TEMPLATE AM</b> or <b>TEMPLATE AM</b> <br> 
-                <b>TEMPLATE</b> Participants</small>
-            </div>
-        </div>
-    </div>
-</div>          
-      <div id="afternoon" class="text-center tab-pane fade">
-        <h3>Afternoon Sessions</h3>
-        <p>Some content in menu 1.</p>
-      </div>
-      <div id="allday" class="text-center tab-pane fade">
-        <h3>All Day Sessions</h3>
-        <p>Some content in menu 2.</p>
-      </div>
-    </div>
-  </div>
-  </div>
 <div class="container">
       <footer class="page-footer font-small gray">
 
