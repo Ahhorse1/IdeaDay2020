@@ -1,6 +1,7 @@
 myObj = {
     "AfternoonSessions": [
         {"name":"Creature Comforts", "speaker":"Mehri Davis", "speakerTitle":"Artist","time": "12:30-3:00 PM", "participants":"25", "description":"Making dolls isn’t just for kids! In this session, you will make homemade doll creatures using any objects you find. This session will be led by artist Mehri Davis whose mission is to use art as a tool for healing. You will discuss how art can be used in your daily life to relieve stress."}
+        {"name":"Developing Mindfulness","speaker":"Emily Bucher","speakerTitle":"Clinical Social Worker","time":"Clinical Social Worker","participants":"25","description":"Mindfulness: the process of bringing your attention, thoughts, and feelings to the present to regain control of yourself. In this workshop, you will learn about mindfulness, engage in a mock therapy group to gain insight on common high school problems from an expert, and learn useful techniques to carry with you throughout your day."}
     ]
 
 }
