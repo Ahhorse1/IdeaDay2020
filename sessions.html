@@ -66,79 +66,31 @@
       <div class="tab-content">
             <div id="morning" class="text-center tab-pane fade show active">  
                 <h3><br>Morning Sessions</h3>
-                <!--
-        <div class="card-deck">
-                    <div class="card bg-info" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title text-left font-weight-bold"><b>Computer Models of Disease Spreading</b></h5> 
-                            <h6 class="card-subtitle text-left"><b>Dr. Greg Rempala</b></h6>
-                            <p class="card-text text-black text-left"> <br>If you’re interested in the intersection between medicine and technology, join OSU professor of Biostatistics Greg Rempala to experience a unique opportunity to learn about and use the revolutionary computer models that have played a crucial role in the modern battlefield of preventing and understanding the spread of diseases.
-                            </p>
-                        </div>
-                        <div class="card-footer bg-white">
-                            <small class="">Choose to attend this Spark Session from <br> 
-                            <b>8:30-9:30 AM</b> or <b>10:00-11:00 AM</b> <br> 
-                            <b>25</b> Participants 
-                            </small>
-
-                        </div>
-                    </div>
-                    <div class="card bg-warning border-warning" style="width: 18rem;"> 
-                    </div>
-                    <div class="card border-success" style="width: 18rem;">
-                        <div class="card-body bg-success">
-                        <h5 class="card-title text-black text-left"><b>Exploring Dance Artforms</b></h5>
-                            <h6 class="card-subtitle text-black text-left"><b>Teresa Crye</b></h6>
-                                <p class="card-text text-black text-left"><br>Learn the building blocks of form and technique from a master dance teacher to enable you to move and create with passion. This workshop will teach you numerous techniques and basic movements of dance, as well as offer fitness and nutrition insight to help maintain health and strength.
-                                </p>
-                        </div>
-                        <div class="card-footer">
-                        <small class="text-black">Choose to attend this Workshop from <br> 
-                            <b>8:30-11:00 AM</b><br> 
-                            <b>40</b> Participants 
-                        </small>
-
-                        </div>
-                    </div>
-            </div>
-          <br>
-          <div class="card-deck">
-                    <div class="card bg-warning border-warning" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title text-left">Computer Models of Disease Spreading</h5> 
-                            <h6 class="card-subtitle text-left"><b>Dr. Greg Rempala</b></h6>
-                            <p class="card-text text-black text-left"> <br>If you’re interested in the intersection between medicine and technology, join OSU professor of Biostatistics Greg Rempala to experience a unique opportunity to learn about and use the revolutionary computer models that have played a crucial role in the modern battlefield of preventing and understanding the spread of diseases.
-                            </p>
-                        </div>
-                        <div class="card-footer bg-white">
-                            <small class="">Choose to attend this Spark Session from <br> 
-                            <b>8:30-9:30 AM</b> or <b>10:00-11:00 AM</b> <br> 
-                            <b>25</b> Participants 
-                            </small>
-
-                        </div>
-                    </div>
-                    <div class="card bg-warning border-warning" style="width: 18rem;"> 
-                    </div>
-                    <div class="card border-success" style="width: 18rem;">
-                        <div class="card-body bg-success">
-                        <h5 class="card-title text-black text-left"><b>Social Media Meets the Columbus Blue Jackets</b></h5>
-                            <h6 class="card-subtitle text-black text-left"><b>Anthony Allocco</b></h6>
-                                <p class="card-text text-black text-left"><br>Learn the building blocks of form and technique from a master dance teacher to enable you to move and create with passion. This workshop will teach you numerous techniques and basic movements of dance, as well as offer fitness and nutrition insight to help maintain health and strength.
-                                </p>
-                        </div>
-                        <div class="card-footer">
-                        <small class="text-black">Choose to attend this Workshop from <br> 
-                            <b>8:30-11:00 AM</b><br> 
-                            <b>25</b> Participants 
-                        </small>
-
-                        </div>
-                    </div>
-            </div>
-        </div>
--->
                 <div class="accordion" id="cOne">
+                    <div class="accordion" id="templateAccordion"> <!-- RENAME THE id -->
+                    <div class="card bg-success"> <!-- bg-success = PINK bg-info = YELLOW -->
+                        <div class="card-header" id="placementHeader"> <!-- RENAME THE ID -->
+                            <h5 class="mb-0">
+                                <button class="btn btn-link font-weight-heavy" type="button" data-toggle="collapse" data-target="#templateCollapse" aria-expanded="true" aria-controls="templateCollapse"> <!-- RENAME THE data-target & aria-controls -->
+                                  <b>TEMPLATE</b>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="templateCollapse" class="collapse show" aria-labelledby="templateHeading" data-parent="#templateAccordion"><!-- RENAME THE ID, aria-labelledby, data-parent -->
+                            <div class="card-body"> 
+                                <h6 class="card-subtitle text-center"><b>TEMPLATE</b></h6>
+                                <p class="card-text text-black text-center"><br>TEMPLATE
+                                </p>
+                            </div>
+                            <div class="card-footer bg-light">
+                                <small class="text-muted">Choose to attend this TEMPLATE from <br> 
+                                <b>TEMPLATE AM</b> or <b>TEMPLATE AM</b> <br> 
+                                <b>TEMPLATE</b> Participants</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
                     <div class="card bg-info">
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
@@ -419,7 +371,7 @@
                                 <p class="card-text text-black text-center"><br>Step into the GRID Lab and experience what happens when you use redirected walking to make virtual reality feel several times larger than real life. In this session, you will have the chance to experience projects created by undergraduate students from the Ohio University Scripps College of Communication.</div>
                             <div class="card-footer bg-light">
                                 <small class="text-muted">Choose to attend this Sprint Session at <br> 
-                                <b>8:30-9:30 AM</b> or <b> 10:00-11:00 AM <br> 
+                                    <b>8:30-9:30 AM</b> or <b> 10:00-11:00 AM </b><br> 
                                 <b>20</b> Participants</small>
                             </div>
                         </div>
@@ -438,7 +390,7 @@
                         <div id="collapseThirteen" class="collapse show" aria-labelledby="headingThirteen" data-parent="#aThirteen">
                             <div class="card-body">
                                 <h6 class="card-subtitle text-center"><b>Dr. Helena Rempala </b> - Assistant Professor in the Department of Psychiatry & Behavioral Health at The Ohio State University Board Certified Clinical Psychologist </h6>
-                                <p class="card-text text-black text-center"><br>Ever wonder about the science of sleep? In this workshop, you will have the chance to learn the intricate mechanisms of the circadian rhythm, how the sleep/wake hygiene affects our lives, and what happens if we either sleep too little or not enough. You will also discover how clinical psychologists help people sleep better.
+                                <p class="card-text text-center"><br>Ever wonder about the science of sleep? In this workshop, you will have the chance to learn the intricate mechanisms of the circadian rhythm, how the sleep/wake hygiene affects our lives, and what happens if we either sleep too little or not enough. You will also discover how clinical psychologists help people sleep better.
                             </div>
                             <div class="card-footer bg-light">
                                 <small class="text-muted">Choose to attend this Sprint Session from <br> 
@@ -448,36 +400,7 @@
                         </div>
                     </div>
                 </div>
-                <br>
-
-
-      
-
-
-
-                <div class="accordion" id="templateAccordion"> <!-- RENAME THE id -->
-                    <div class="card bg-success"> <!-- bg-success = PINK bg-info = YELLOW -->
-                        <div class="card-header" id="placementHeader"> <!-- RENAME THE ID -->
-                            <h5 class="mb-0">
-                                <button class="btn btn-link font-weight-heavy" type="button" data-toggle="collapse" data-target="#templateCollapse" aria-expanded="true" aria-controls="templateCollapse"> <!-- RENAME THE data-target & aria-controls -->
-                                  <b>TEMPLATE</b>
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="templateCollapse" class="collapse show" aria-labelledby="templateHeading" data-parent="#templateAccordion"><!-- RENAME THE ID, aria-labelledby, data-parent -->
-                            <div class="card-body"> 
-                                <h6 class="card-subtitle text-center"><b>TEMPLATE</b></h6>
-                                <p class="card-text text-black text-center"><br>TEMPLATE
-                                </p>
-                            </div>
-                            <div class="card-footer bg-light">
-                                <small class="text-muted">Choose to attend this TEMPLATE from <br> 
-                                <b>TEMPLATE AM</b> or <b>TEMPLATE AM</b> <br> 
-                                <b>TEMPLATE</b> Participants</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>     
+                <br>     
             </div>
         </div>
             <div id="afternoon" class="text-center tab-pane fade show active">
@@ -544,17 +467,17 @@
 }
 var counter=0;
 for (i in myObj.AfternoonSessions){
-   document.getElementById('afternoon').innerHTML += "<br><div class='accordion' id='accordian" + counter + "'> <div class='card bg-success'> <div class='card-header' id='heading" + counter + "'> <h5 class='mb-0'> <button class='btn btn-link font-weight-heavy' type='button' data-toggle='collapse' data-target='#collapse" + counter + "' aria-expanded='true' aria-controls='collapse" + counter + "'> <b>" + myObj.AfternoonSessions[i].name + "</b> </button> </h5> </div> <div id='collapse" + counter + "' class='collapse show' aria-labelledby='heading" + counter + "' data-parent='#accordian" + counter + "'> <div class='card-body'> <h6 class='card-subtitle text-center'><b>" + myObj.AfternoonSessions[i].speaker + "</b> —" + myObj.AfternoonSessions[i].speakerTitle + "</h6> <p class='card-text text-center'><br>" + myObj.AfternoonSessions[i].description + "</p> </div> <div class='card-footer bg-light'> <small class='text-muted'>Choose to attend this " + myObj.AfternoonSessions[i].status + " from <br> <b>" + myObj.AfternoonSessions[i].time + "</b><br> <b>" + myObj.AfternoonSessions[i].participants + "</b> Participants</small> </div> </div> </div> </div> "
+   document.getElementById('afternoon').innerHTML += "<br><div class='accordion' id='accordian" + counter + "'> <div class='card bg-success'> <div class='card-header' id='heading" + counter + "'> <h5 class='mb-0'> <button class='btn btn-link font-weight-heavy' type='button' data-toggle='collapse' data-target='#collapse" + counter + "' aria-expanded='true' aria-controls='collapse" + counter + "'> <b>" + myObj.AfternoonSessions[i].name + "</b> </button> </h5> </div> <div id='collapse" + counter + "' class='collapse show' aria-labelledby='heading" + counter + "' data-parent='#accordian" + counter + "'> <div class='card-body'> <h6 class='card-subtitle text-center'><b>" + myObj.AfternoonSessions[i].speaker + "</b> - " + myObj.AfternoonSessions[i].speakerTitle + "</h6> <p class='card-text text-center'><br>" + myObj.AfternoonSessions[i].description + "</p> </div> <div class='card-footer bg-light'> <small class='text-muted'>Choose to attend this " + myObj.AfternoonSessions[i].status + " from <br> <b>" + myObj.AfternoonSessions[i].time + "</b><br> <b>" + myObj.AfternoonSessions[i].participants + "</b> Participants</small> </div> </div> </div> </div> "
 counter++;
 }</script>
   <script>
   myObj = {
     "MorningSessions": [
-       {"name":"Community Outreach Activities through Franklin County OSU Extension","speaker":"Sue Hogan","speakerTitle":"Educator with 4-H Youth Development","time":"8:30-11:00 AM","participants":"40","description":"Join the 4H Youth Development team for an interactive, team-building session that explores everything from driver safety to gardening to plant pathology to what it�s like to make a smoothie while riding a bike.","status":"Field Trip"}]
+       {"name":"Community Outreach Activities through Franklin County OSU Extension","speaker":"Sue Hogan","speakerTitle":"Educator with 4-H Youth Development","time":"8:30-11:00 AM","participants":"40","description":"Join the 4H Youth Development team for an interactive, team-building session that explores everything from driver safety to gardening to plant pathology to what it's like to make a smoothie while riding a bike.","status":"Field Trip"}]
 
 }
 var counter=0;
 for (i in myObj.MorningSessions){
-   document.getElementById('morning').innerHTML += "<br><div class='accordion' id='a" + counter + "'> <div class='card bg-success'> <div class='card-header' id='aHeading" + counter + "'> <h5 class='mb-0'> <button class='btn btn-link' type='button' data-toggle='collapse' data-target='#acollapse" + counter + "' aria-expanded='true' aria-controls='acollapse" + counter + "'> <b>" + myObj.MorningSessions[i].name + "</b> </button> </h5> </div> <div id='acollapse" + counter + "' class='collapse show' aria-labelledby='aHeading" + counter + "' data-parent='#a" + counter + "'> <div class='card-body'> <h6 class='card-subtitle text-center'><b>" + myObj.MorningSessions[i].speaker + "</b> —" + myObj.MorningSessions[i].speakerTitle + "</h6> <p class='card-text text-black text-center'><br>" + myObj.MorningSessions[i].description + "</p> </div> <div class='card-footer bg-light'> <small class='text-muted'>Choose to attend this " + myObj.MorningSessions[i].status + " from <br> <b>" + myObj.MorningSessions[i].time + "</b><br> <b>" + myObj.MorningSessions[i].participants + "</b> Participants</small> </div> </div> </div> </div> "
+   document.getElementById('morning').innerHTML += "<br><div class='accordion' id='a" + counter + "'> <div class='card bg-success'> <div class='card-header' id='aHeading" + counter + "'> <h5 class='mb-0'> <button class='btn btn-link' type='button' data-toggle='collapse' data-target='#acollapse" + counter + "' aria-expanded='true' aria-controls='acollapse" + counter + "'> <b>" + myObj.MorningSessions[i].name + "</b> </button> </h5> </div> <div id='acollapse" + counter + "' class='collapse show' aria-labelledby='aHeading" + counter + "' data-parent='#a" + counter + "'> <div class='card-body'> <h6 class='card-subtitle text-center'><b>" + myObj.MorningSessions[i].speaker + "</b> - " + myObj.MorningSessions[i].speakerTitle + "</h6> <p class='card-text text-black text-center'><br>" + myObj.MorningSessions[i].description + "</p> </div> <div class='card-footer bg-light'> <small class='text-muted'>Choose to attend this " + myObj.MorningSessions[i].status + " from <br> <b>" + myObj.MorningSessions[i].time + "</b><br> <b>" + myObj.MorningSessions[i].participants + "</b> Participants</small> </div> </div> </div> </div> "
 counter++;
 }</script>
