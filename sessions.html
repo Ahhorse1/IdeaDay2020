@@ -457,21 +457,14 @@
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic" />
   
   <script>
-  <!-- myObj = {
+  myObj = {
     "AfternoonSessions": [
         {"name":"Creature Comforts", "speaker":"Mehri Davis", "speakerTitle":"Artist","time": "12:30-3:00 PM", "participants":"25", "status":"Workshop","description":"Making dolls isnt just for kids! In this session, you will make homemade doll creatures using any objects you find. This session will be led by artist Mehri Davis whose mission is to use art as a tool for healing. You will discuss how art can be used in your daily life to relieve stress."}
         ,{"name":"Developing Mindfulness","speaker":"Emily Bucher","speakerTitle":"Clinical Social Worker","time":"Clinical Social Worker","participants":"25","description":"DESMindfulness: the process of bringing your attention, thoughts, and feelings to the present to regain control of yourself. In this workshop, you will learn about mindfulness, engage in a mock therapy group to gain insight on common high school problems from an expert, and learn useful techniques to carry with you throughout your day.","status":"Sprint"}
         ,{"name":"Why Journalism Matters","speaker":"Anne Saker","speakerTitle":"Staff Writer for The Cincinnati Enquirer and cincinnati.com","time":"Staff Writer for The Cincinnati Enquirer and cincinnati.com","participants":"25","description":"If you are a future defender of the free press, this is the workshop for you. Anne Saker, a writer from The Cincinnati Enquirer, will lead a workshop to give students the opportunity to speak to a real journalist in the field, and to gain a greater appreciation for the power and responsibility of the press.","status":"Workshop"}
         ,{"name":"What Do Your Surroundings Say About You?","speaker":"Hayley Deeter","speakerTitle":"Owner of Hayley Gallery","time":"Owner of Hayley Gallery","participants":"40","description":"This session will give students the opportunity to visit the Hayley Gallery to explore local art and artists in an interactive setting. You will be able to find pieces that you most connect with, hear from the gallery owner herself about how to design your own personal surroundings, and then use those skills to redesign your bedroom!","status":"Fieldtrip"}
         ,{"name":"Musical Theater Workshop","speaker":"Jackie Comisar","speakerTitle":"Director & Choreographer","time":"Director & Choreographer","participants":"25","description":"If your ambitions are set on the big stage, then you're in luck! This session will let you work with a director and choreographer to master the basics of a musical audition. You'll learn how to easily master a 16 bar cut of a musical theatre audition song and be able to perform it with emotion and technical skill. Students need to bring a 16 bar cut of music that they can perform.","status":"Workshop"}
-]}; -->
-  var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    var myObj = JSON.parse(this.responseText);
-    document.getElementById("demo").innerHTML = myObj.name;
-  }
-};
+]};
 xmlhttp.open("GET", "https://api.myjson.com/bins/fn7l8", true);
 xmlhttp.send();
       var counter=0;
