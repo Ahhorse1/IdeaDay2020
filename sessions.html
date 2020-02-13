@@ -477,7 +477,7 @@ for (i in myObj.AfternoonSessions){
    document.getElementById("afternoon").innerHTML += "<br><div class='accordion' id='a" + counter + "'><div class='card bg-success'><div class='card-header' id='aHeading" + counter + "'><h5 class='mb-0'><button class='btn btn-link' type='button' data-toggle='collapse' data-target='#acollapse" + counter + "' aria-expanded='true' aria-controls='acollapse" + counter + "'><b>" + myObj.AfternoonSessions[i].name + "</b><img src='https://raw.githubusercontent.com/Ahhorse1/ahhorse1.github.io/master/Assets/SessionLogos/" + myObj.AfternoonSessions[i].image + "' class='img-fluid'></button> </h5> </div> <div id='acollapse" + counter + "' class='collapse show' aria-labelledby='aHeading" + counter + "' data-parent='#a" + counter + "'><div class='card-body'><h6 class='card-subtitle text-center'><b>" + myObj.AfternoonSessions[i].speaker + "</b> - " + myObj.AfternoonSessions[i].speakerTitle + "</h6><p class='card-text text-black text-center'><br>" + myObj.AfternoonSessions[i].description + "</p></div><div class='card-footer bg-light'> <small class='text-muted'>Choose to attend this " + myObj.AfternoonSessions[i].status + " from <br> <b>" + myObj.AfternoonSessions[i].time + "</b><br> <b>" + myObj.AfternoonSessions[i].participants + "</b> Participants</small> </div> </div> </div> </div> ";
 counter++;
 }  
-  <!--
+  </script><script> 
   myObj ={
     "AllDaySessions":[
       ,{"name":"Designing an Outdoor Classroom ","color":"success","image":"Bus.png","speaker":"Miguel Tucker","speakerTitle":" CEO and Founder of Urban Scouts & Darin Hadinger - President of Pivot Solar Inc.","time":"8:00-3:00pm","participants":"12","description":"During a design workshop, a group of UAHS students proposed an outdoor classroom. Another student wrote her extended essay on the feasibility of a greenhouse at UAHS. All of these students inspired conversations that led to this UA Idea Day session. And so, in a full day workshop, a group of 12 UA students will work alongside 12 students from Linden McKinley STEM Academy. Together and independently, these students will have the chance to dream about learning spaces, and then learn how to make those dreams a reality. From interior design, to renewable energy, to design thinking, to grant-writing, this workshop will immerse you in an experience that will open doors, and allow you to create something truly innovative. If your team is able to rise to the challenge, we just might be able to turn your concept into reality. ","status":"Field Trip"}
@@ -508,5 +508,5 @@ counter++;
        "<div class='card-footer bg-light'> <small class='text-muted'>Choose to attend this " + myObj.AllDaySessions[i].status + " from <br> <b>" + myObj.AllDaySessions[i].time + "</b><br> <b>" + myObj.AllDaySessions[i].participants + "</b> Participants</small> </div> </div> </div> </div> ";
 counter++;
 }
-    -->
+   
   </script>
