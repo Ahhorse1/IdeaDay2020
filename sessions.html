@@ -209,7 +209,7 @@ counter++;
        "<h6 class='card-subtitle text-center'><b>" + myObj.AllDaySessions[i].speaker + "</b> - " + myObj.AllDaySessions[i].speakerTitle + "</h6>"+ 
        "<p class='card-text text-black text-center'><br>" + myObj.AllDaySessions[i].description + "</p>"+ 
        "</div>"+ 
-       "<div class='card-footer bg-light'> <small class='text-muted'>Choose to attend this " + myObj.AllDaySessions[i].status + " from <br> <b>" + myObj.AllDaySessions[i].time + "</b><br> <b>" + myObj.AllDaySessions[i].participants + "</b> Participants</small> </div> </div> </div> </div> ";
+       "<div class='card-footer bg-light'> <small class='text-muted'>" + myObj.AllDaySessions[i].status + "<br> <b>" + myObj.AllDaySessions[i].time + "</b><br> <b>" + myObj.AllDaySessions[i].participants + "</b> Participants</small> </div> </div> </div> </div> ";
     counter++;
 }
    
@@ -266,7 +266,7 @@ for (i in myObj.MorningSessions){
      "<h6 class='card-subtitle text-center'><b>" + myObj.MorningSessions[i].speaker + "</b> " + myObj.MorningSessions[i].speakerTitle + "</h6>"+ 
      "<p class='card-text text-black text-center'><br>" + myObj.MorningSessions[i].description + "</p>"+ 
      "</div>"+ 
-     "<div class='card-footer bg-light'> <small class='text-muted'>Choose to attend this " + myObj.MorningSessions[i].status + " from <br> <b>" + myObj.MorningSessions[i].time + "</b><br> <b>" + myObj.MorningSessions[i].participants + "</b> Participants</small> </div> </div> </div> </div>";
+     "<div class='card-footer bg-light'> <small class='text-muted'>" + myObj.MorningSessions[i].status + "<br> <b>" + myObj.MorningSessions[i].time + "</b><br> <b>" + myObj.MorningSessions[i].participants + "</b> Participants</small> </div> </div> </div> </div>";
   counter++;
 }
  
@@ -309,7 +309,7 @@ for (i in myObj.DoubledSessions){
      "<h6 class='card-subtitle text-center'><b>" + myObj.DoubledSessions[i].speaker + "</b> " + myObj.DoubledSessions[i].speakerTitle + "</h6>"+ 
      "<p class='card-text text-black text-center'><br>" + myObj.DoubledSessions[i].description + "</p>"+ 
      "</div>"+ 
-     "<div class='card-footer bg-light'> <small class='text-muted'>Choose to attend this " + myObj.DoubledSessions[i].status + " from <br> <b>" + myObj.DoubledSessions[i].time + "</b><br> <b>" + myObj.DoubledSessions[i].participants + "</b> Participants</small> </div> </div> </div> </div>";
+     "<div class='card-footer bg-light'> <small class='text-muted'>" + myObj.DoubledSessions[i].status + "<br> <b>" + myObj.DoubledSessions[i].time + "</b><br> <b>" + myObj.DoubledSessions[i].participants + "</b> Participants</small> </div> </div> </div> </div>";
   counter++;
 }
     counter = 0;
