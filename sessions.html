@@ -81,12 +81,12 @@
             <div id="allday" class="text-center tab-pane fade show">
                 <h3><br>All Day Sessions</h3> 
               <br>
-                <div class="accordion" id="cOne">
+                <div class="accordion text-black" id="cOne">
                     <div class="card bg-success">
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
-                                <button class="btn btn-link font-weight-heavy" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  <b>The Power of Story: History, Artifacts, and the Legacy You’ll Leave</b>
+                                <button class="btn btn-link font-weight-heavy text-black" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <b><u>The Power of Story: History, Artifacts, and the Legacy You’ll Leave</u></b>
                                     <img src="https://raw.githubusercontent.com/Ahhorse1/ahhorse1.github.io/master/Assets/SessionLogos/Crafts.png" class="img-fluid">
                                 </button>
                             </h5>
@@ -109,22 +109,17 @@
             myObj ={
                 "AllDaySessions":[
                 {"name":"Introduction to Special Effects - Movies","color":"success","image":"Crafts.png","speaker":"Todd Reed","speakerTitle":" Member of 614 SCREAM KINGS & STEAMPOWERED SFX PRODUCTIONS ","time":"8:00-3:00pm","participants":"25","description":"Movies become magical at the hands of those special effects geniuses who sculpt, paint, and reshape reality. In this workshop, learn the tricks and tips of the trade from an industry expert and try your hand at sculpting, casting, painting and simulating. ","status":"Workshop"}
-                ,{"name":"Fashion & Event Photography + Fashion Publication","color":"success","image":"Crafts.png","speaker":"Students & Professors in the Retail Merchandising and Fashion Product Development Program in The Patton College of Education at Ohio University","speakerTitle":" ","time":"8:00-3:00pm","participants":"25","description":"During the first half of the day, learn how to photograph a dynamic event by understanding how to frame photos, identify suitable backgrounds and poses, and photograph a moving subject. You will also get the opportunity to learn how to compile information and photographs to create a visually pleasing fashion publication. In the afternoon, you will be able to design an insert that will potentially be displayed in the Arlingtonian.","status":"Workshop"}
-                ,{"name":"Designing an Outdoor Classroom ","color":"success","image":"Bus.png","speaker":"Miguel Tucker","speakerTitle":" CEO and Founder of Urban Scouts & Darin Hadinger - President of Pivot Solar Inc.","time":"8:00-3:00pm","participants":"12","description":"During a design workshop, a group of UAHS students proposed an outdoor classroom. Another student wrote her extended essay on the feasibility of a greenhouse at UAHS. All of these students inspired conversations that led to this UA Idea Day session. And so, in a full day workshop, a group of 12 UA students will work alongside 12 students from Linden McKinley STEM Academy. Together and independently, these students will have the chance to dream about learning spaces, and then learn how to make those dreams a reality. From interior design, to renewable energy, to design thinking, to grant-writing, this workshop will immerse you in an experience that will open doors, and allow you to create something truly innovative. If your team is able to rise to the challenge, we just might be able to turn your concept into reality. ","status":"Field Trip"}
-                ,{"name":"American Ninja Warrior ","color":"success","image":"Bus.png","speaker":"Lexy Fout","speakerTitle":" Administrative Manager at the Movement Lab & Andy Mills, President & Managing Partner at Elford Realty","time":"8:00-3:00pm","participants":"28","description":"Have you ever wondered if you have what it takes to scale the warp wall or conquer the salmon ladder? If so, this session gives you the chance to test your skills at the Movement Lab, a gym owned by real life American Ninja Warriors who live in Columbus. After a morning of climbing, jumping, and scaling, you will return to the high school to work in teams on a design challenge. In that workshop, entrepreneur and OSU business professor, Andy Mills, will facilitate an engaging, creative, and physical experience that will give you the chance to envision, and then create, an obstacle of your own.","status":"Field Trip"}
-                ,{"name":"Extreme Makeover - What it Takes","color":"success","image":"Bus.png","speaker":"April Howe","speakerTitle":" Marketing Coordinator at The Cleary Company","time":"8:00-3:00pm","participants":"15","description":"Are you interested in architecture, design or simply want to remodel your room? In this session you will get the opportunity to visit the Cleary Company, who specializes in home remodeling. You will walk through the process of remodeling a room, have the opportunity to construct furniture together and see demonstrations of how different tools are used in the building process.","status":"Field Trip"}
-                ,{"name":"Undercover - UA Schools Operations ","color":"success","image":"Bus.png","speaker":"Upper Arlington City Schools Operations Team","speakerTitle":"","time":"8:00-3:00pm","participants":"16","description":"Do you like to figure things out yourself? Are you interested in learning skills that could make you money right now? In this session, members of the Upper Arlington City Schools operations team will offer hands on experiences wiring a light switch, plumbing sinks, soldering copper, and learning the ins and outs of HVAC. In the afternoon, you’ll get to put on your hardhat and tour the new Greensview building, before ending your day with a behind-the-scenes look at what’s in our basement here at UAHS.","status":"Field Trip"}
-                ,{"name":"Learning Over Lunch","image":"Bus.png","color":"success","speaker":"Mary Boesch","speakerTitle":" Founder of the Cambridge Tea House","time":"8:00-3:00pm","participants":"12","description":"Sometimes it’s nice to learn while you’re making something to eat. In this session, Entrepreneur Mary Boesch welcomes you into her home to learn how to make a delicious lunch, and how to build a successful business. ","status":"Field Trip"}  
+                ,{"name":"Fashion & Event Photography + Fashion Publication","color":"success","image":"Crafts.png","speaker":"Students & Professors in the Retail Merchandising and Fashion Product Development Program in The Patton College of Education at Ohio University","speakerTitle":" ","time":"8:00-3:00pm","participants":"25","description":"During the first half of the day, learn how to photograph a dynamic event by understanding how to frame photos, identify suitable backgrounds and poses, and photograph a moving subject. You will also get the opportunity to learn how to compile information and photographs to create a visually pleasing fashion publication. In the afternoon, you will be able to design an insert that will potentially be displayed in the Arlingtonian.","status":"Workshop"}  
             ]};
             var counter = 0;
               for (i in myObj.AllDaySessions){
                document.getElementById("allday").innerHTML += 
-                   "<br><div class='accordion' bg-" + myObj.AllDaySessions[i].color + "id='c" + counter + "'>" +
-                        "<div class='card bg-success'>"+
+                   "<br><div class='accordion text-black' id='c" + counter + "'>" +
+                        "<div class='card bg-" + myObj.AllDaySessions[i].color + "'>" +
                         "<div class='card-header' id='aHeading" + counter + "'>" + 
                                 "<h5 class='mb-0'>" + 
-                                    "<button class='btn btn-link' type='button' data-toggle='collapse' data-target='#acollapse" + counter + "' aria-expanded='true' aria-controls='acollapse" + counter + "'>" +
-                                        "<b>" + myObj.AllDaySessions[i].name + "</b>" + 
+                                    "<button class='btn btn-link text-black' type='button' data-toggle='collapse' data-target='#acollapse" + counter + "' aria-expanded='true' aria-controls='acollapse" + counter + "'>" +
+                                        "<b> <u>" + myObj.AllDaySessions[i].name + "</u> </b>" + 
                                             "<img src='https://raw.githubusercontent.com/Ahhorse1/ahhorse1.github.io/master/Assets/SessionLogos/" + myObj.AllDaySessions[i].image + "' class='img-fluid'>" + 
                                         "</button> </h5> </div> <div id='acollapse" + counter + "' class='collapse show' aria-labelledby='aHeading" + counter + "' data-parent='#a" + counter + "'>"+ 
                                     "<div class='card-body'>"+ 
@@ -135,12 +130,40 @@
                 counter++;
               }
           </script>
-                <div class="accordion" id="cTwo">
-                    <div class="card bg-success">
+         <script> 
+            myObj ={
+                "AllDaySessions":[  
+                ,{"name":"Designing an Outdoor Classroom ","color":"danger","image":"Bus.png","speaker":"Miguel Tucker","speakerTitle":" CEO and Founder of Urban Scouts & Darin Hadinger - President of Pivot Solar Inc.","time":"8:00-3:00pm","participants":"12","description":"During a design workshop, a group of UAHS students proposed an outdoor classroom. Another student wrote her extended essay on the feasibility of a greenhouse at UAHS. All of these students inspired conversations that led to this UA Idea Day session. And so, in a full day workshop, a group of 12 UA students will work alongside 12 students from Linden McKinley STEM Academy. Together and independently, these students will have the chance to dream about learning spaces, and then learn how to make those dreams a reality. From interior design, to renewable energy, to design thinking, to grant-writing, this workshop will immerse you in an experience that will open doors, and allow you to create something truly innovative. If your team is able to rise to the challenge, we just might be able to turn your concept into reality. ","status":"Field Trip"}
+                ,{"name":"American Ninja Warrior ","color":"danger","image":"Bus.png","speaker":"Lexy Fout","speakerTitle":" Administrative Manager at the Movement Lab & Andy Mills, President & Managing Partner at Elford Realty","time":"8:00-3:00pm","participants":"28","description":"Have you ever wondered if you have what it takes to scale the warp wall or conquer the salmon ladder? If so, this session gives you the chance to test your skills at the Movement Lab, a gym owned by real life American Ninja Warriors who live in Columbus. After a morning of climbing, jumping, and scaling, you will return to the high school to work in teams on a design challenge. In that workshop, entrepreneur and OSU business professor, Andy Mills, will facilitate an engaging, creative, and physical experience that will give you the chance to envision, and then create, an obstacle of your own.","status":"Field Trip"}
+                ,{"name":"Extreme Makeover - What it Takes","color":"danger","image":"Bus.png","speaker":"April Howe","speakerTitle":" Marketing Coordinator at The Cleary Company","time":"8:00-3:00pm","participants":"15","description":"Are you interested in architecture, design or simply want to remodel your room? In this session you will get the opportunity to visit the Cleary Company, who specializes in home remodeling. You will walk through the process of remodeling a room, have the opportunity to construct furniture together and see demonstrations of how different tools are used in the building process.","status":"Field Trip"}
+                ,{"name":"Undercover - UA Schools Operations ","color":"danger","image":"Bus.png","speaker":"Upper Arlington City Schools Operations Team","speakerTitle":"","time":"8:00-3:00pm","participants":"16","description":"Do you like to figure things out yourself? Are you interested in learning skills that could make you money right now? In this session, members of the Upper Arlington City Schools operations team will offer hands on experiences wiring a light switch, plumbing sinks, soldering copper, and learning the ins and outs of HVAC. In the afternoon, you’ll get to put on your hardhat and tour the new Greensview building, before ending your day with a behind-the-scenes look at what’s in our basement here at UAHS.","status":"Field Trip"}
+                ,{"name":"Learning Over Lunch","image":"Bus.png","color":"danger","speaker":"Mary Boesch","speakerTitle":" Founder of the Cambridge Tea House","time":"8:00-3:00pm","participants":"12","description":"Sometimes it’s nice to learn while you’re making something to eat. In this session, Entrepreneur Mary Boesch welcomes you into her home to learn how to make a delicious lunch, and how to build a successful business. ","status":"Field Trip"}  
+            ]};
+            var counter = 0;
+              for (i in myObj.AllDaySessions){
+               document.getElementById("allday").innerHTML += 
+                   "<br><div class='accordion text-white' id='c" + counter + "'>" +
+                        "<div class='card bg-" + myObj.AllDaySessions[i].color + "'>" +
+                        "<div class='card-header' id='aHeading" + counter + "'>" + 
+                                "<h5 class='mb-0'>" + 
+                                    "<button class='btn btn-link text-white' type='button' data-toggle='collapse' data-target='#acollapse" + counter + "' aria-expanded='true' aria-controls='acollapse" + counter + "'>" +
+                                        "<b> <u>" + myObj.AllDaySessions[i].name + "</u> </b>" + 
+                                            "<img src='https://raw.githubusercontent.com/Ahhorse1/ahhorse1.github.io/master/Assets/SessionLogos/" + myObj.AllDaySessions[i].image + "' class='img-fluid'>" + 
+                                        "</button> </h5> </div> <div id='acollapse" + counter + "' class='collapse show' aria-labelledby='aHeading" + counter + "' data-parent='#a" + counter + "'>"+ 
+                                    "<div class='card-body'>"+ 
+                   "<h6 class='card-subtitle text-center'><b>" + myObj.AllDaySessions[i].speaker + "</b> - " + myObj.AllDaySessions[i].speakerTitle + "</h6>"+ 
+                   "<p class='card-text text-white text-center'><br>" + myObj.AllDaySessions[i].description + "</p>"+ 
+                   "</div>"+ 
+                   "<div class='card-footer bg-light'> <small class='text-muted'>" + myObj.AllDaySessions[i].status + "<br> <b>" + myObj.AllDaySessions[i].time + "</b><br> <b>" + myObj.AllDaySessions[i].participants + "</b> Participants</small> </div> </div> </div> </div> ";
+                counter++;
+              }
+                </script>
+                <div class="accordion text-white" id="cTwo">
+                    <div class="card bg-danger">
                         <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
-                                <button class="btn btn-link font-weight-heavy" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                  <b>You vs. the Wild &amp; College Coaching 101</b>
+                                <button class="btn btn-link font-weight-heavy text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                  <b> <u> You vs. the Wild &amp; College Coaching 101 </u></b>
                                     <img src="https://raw.githubusercontent.com/Ahhorse1/ahhorse1.github.io/master/Assets/SessionLogos/Bus.png" class="img-fluid">
                                 </button>
                             </h5>
@@ -148,11 +171,11 @@
                         <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#cTwo">
                             <div class="card-body">
                                 <h6 class="card-subtitle text-center"><b>Dr. Bruce Martin</b> - Professor & Department Chair of Recreation and Sport Pedagogy at Ohio University</h6>
-                                <p class="card-text text-black text-center"><br>In the morning, Dr. Martin will introduce you to basic knowledge and skills needed to successfully navigate a wilderness survival situation, with an emphasis on avoiding survival situations in the first place. The workshop also addresses strategies and techniques for overcoming the various physical and psychological challenges that people typically experience in these situations.</p>
+                                <p class="card-text text-white text-center"><br>In the morning, Dr. Martin will introduce you to basic knowledge and skills needed to successfully navigate a wilderness survival situation, with an emphasis on avoiding survival situations in the first place. The workshop also addresses strategies and techniques for overcoming the various physical and psychological challenges that people typically experience in these situations.</p>
                                 
                                 <h6 class="card-subtitle text-center"><b>Dr. Ashley Allanson</b> - Assistant Professor of Instruction, Recreation and Sport Pedagogy at Ohio University</h6>
-                                <p class="card-text text-black text-center"><br>In the afternoon, Dr. Allanson will give you the chance to learn athlete-centered coaching pedagogy, practical application of micro-coaching and coaching observations of Ohio University collegiate coaches. Providing insight into how coaches plan, deliver and evaluate sessions to impact their athletes most effectively.</p>  
-                                <p class="card-text text-black text-center"><br>Note: if you go to this session, you will not return to the high school until 4pm</p>
+                                <p class="card-text text-white text-center"><br>In the afternoon, Dr. Allanson will give you the chance to learn athlete-centered coaching pedagogy, practical application of micro-coaching and coaching observations of Ohio University collegiate coaches. Providing insight into how coaches plan, deliver and evaluate sessions to impact their athletes most effectively.</p>  
+                                <p class="card-text text-white text-center"><br>Note: if you go to this session, you will not return to the high school until 4pm</p>
                             </div>
                             <div class="card-footer bg-light">
                                 <small class="text-muted">Field Trip<br> 
