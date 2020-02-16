@@ -108,7 +108,7 @@
             <script> 
             myObj ={
                 "AllDaySessions":[
-                {"name":"Introduction to Special Effects - Movies","color":"success","image":"Crafts.png","speaker":"Todd Reed","speakerTitle":" Member of 614 SCREAM KINGS & STEAMPOWERED SFX PRODUCTIONS ","time":"8:00-3:00pm","participants":"25","description":"Movies become magical at the hands of those special effects geniuses who sculpt, paint, and reshape reality. In this workshop, learn the tricks and tips of the trade from an industry expert and try your hand at sculpting, casting, painting and simulating. ","status":"Workshop"}
+                {"name":"Introduction to Special Effects - Movies","color":"success","image":"Crafts.png","speaker":"Todd Reed","speakerTitle":"- Member of 614 SCREAM KINGS & STEAMPOWERED SFX PRODUCTIONS ","time":"8:00-3:00pm","participants":"25","description":"Movies become magical at the hands of those special effects geniuses who sculpt, paint, and reshape reality. In this workshop, learn the tricks and tips of the trade from an industry expert and try your hand at sculpting, casting, painting and simulating. ","status":"Workshop"}
                 ,{"name":"Fashion & Event Photography + Fashion Publication","color":"success","image":"Crafts.png","speaker":"Students & Professors in the Retail Merchandising and Fashion Product Development Program in The Patton College of Education at Ohio University","speakerTitle":" ","time":"8:00-3:00pm","participants":"25","description":"During the first half of the day, learn how to photograph a dynamic event by understanding how to frame photos, identify suitable backgrounds and poses, and photograph a moving subject. You will also get the opportunity to learn how to compile information and photographs to create a visually pleasing fashion publication. In the afternoon, you will be able to design an insert that will potentially be displayed in the Arlingtonian.","status":"Workshop"}  
             ]};
             var counter = 0;
@@ -123,7 +123,7 @@
                                             "<img src='https://raw.githubusercontent.com/Ahhorse1/ahhorse1.github.io/master/Assets/SessionLogos/" + myObj.AllDaySessions[i].image + "' class='img-fluid'>" + 
                                         "</button> </h5> </div> <div id='acollapse" + counter + "' class='collapse show' aria-labelledby='aHeading" + counter + "' data-parent='#a" + counter + "'>"+ 
                                     "<div class='card-body'>"+ 
-                   "<h6 class='card-subtitle text-center'><b>" + myObj.AllDaySessions[i].speaker + "</b> - " + myObj.AllDaySessions[i].speakerTitle + "</h6>"+ 
+                   "<h6 class='card-subtitle text-center'><b>" + myObj.AllDaySessions[i].speaker + "</b> " + myObj.AllDaySessions[i].speakerTitle + "</h6>"+ 
                    "<p class='card-text text-black text-center'><br>" + myObj.AllDaySessions[i].description + "</p>"+ 
                    "</div>"+ 
                    "<div class='card-footer bg-light'> <small class='text-muted'>" + myObj.AllDaySessions[i].status + "<br> <b>" + myObj.AllDaySessions[i].time + "</b><br> <b>" + myObj.AllDaySessions[i].participants + "</b> Participants</small> </div> </div> </div> </div> ";
